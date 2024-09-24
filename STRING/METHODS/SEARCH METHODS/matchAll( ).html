@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! matchAll()  -->
+
+    <!--? 1.The matchAll() method returns an iterator containing the results of matching a string against a string (or a regular expression).  -->
+    <script>
+        let text = "I love cats. Cats are very easy to love. Cats are very popular."
+        const iterator = text.matchAll("Cats");
+        console.log(Array.from(iterator));
+    </script>
+
+    <!--? 2.If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.  -->
+    <script>
+        let text1 = "I love cats. Cats are very easy to love. Cats are very popular."
+        const iterator1 = text.matchAll(/Cats/gi);
+        console.log(Array.from(iterator1));
+    </script>
+</body>
+</html>

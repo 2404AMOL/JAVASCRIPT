@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! Important Rules  -->
+    <!--* 1. Number + Number = Number  -->
+    <!--* 2. Number + "String" = String  -->
+    <!--* 3. "String" + Number = String  -->
+    <!--* 4. Boolean + "String" = String  -->
+
+    <!--! Operand1(A) Operator(+,-,*,/) Operand2(B) = Expression  -->
+
+    <!--* + (Concatenation) "10"+10 : If any One of the operand is String then it will perform the Concatenation -->
+    <!--* + (Addition) : 10+10 : If both the operands are Number Then it will perform the Arithmetic Operation  -->
+    <!--* - "10"-"10" : If Given String is Valid Number Then it will perform the Arithmetic Operations -->
+
+    <!--* ""  : It is considered as false means Zero(0)-->
+    <!--* " " : It is considered as false means Zero(0) -->
+    <!--* null : It is considered as false means Zero(0)  -->
+    <!--* Negative Integer Value : It is considered as false means Zero(0)  -->
+    <!--* undefined : It is considered as false means Zero(0)  -->
+    <!--* NaN : It is considered as false means Zero(0)  -->
+
+    <!--* "string" :(The String which is Not Empty is Considered as true) It is considered as true means One(1)  -->
+
+    <script>
+        console.log(10+10);
+
+        console.log(10+"10");
+
+        console.log("a"-1);//nan Not a Number
+
+        console.log("10"-5);//5
+        
+        console.log("10"-"10");
+        
+        console.log(true+"true");
+        
+        console.log(true+10);
+        
+        console.log(false-5);
+        
+        console.log(true+true);
+        
+        console.log(5+"true");
+        
+        console.log(null-true);
+
+        console.log(""-true);
+
+        console.log(" "-true);
+
+        console.log(" "+true);
+
+        console.log(true-"");
+
+        console.log(true-" ");
+
+        console.log(true-"a")
+
+        console.log('a'+10);
+
+        console.log("33"+"33"-"3");
+
+        console.log("33"-"33"+"3");
+
+    </script>
+
+
+</body>
+</html>

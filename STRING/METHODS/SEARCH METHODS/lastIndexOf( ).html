@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! lastIndexOf()  -->
+
+    <!--* The lastIndexOf() method returns the last index of occurence of a given substring in the string.  -->
+    <script>
+        let str = "I love Java.The Best language is Java.";
+        console.log(str.lastIndexOf("Java"));
+    </script>
+
+    <!--? The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.  -->
+    <script>
+        let text = "programming";
+        console.log(text.lastIndexOf("g",3))
+    </script>
+
+    <!--? -Both indexOf(), and lastIndexOf() return -1 if the text is not found:  -->
+    <script>
+        let string = "Hey..."
+        console.log(string.lastIndexOf("P"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form action="" onsubmit="getData()">
+
+            <label for="fname">First Name:</label>
+            <input type="text"  id="fname" placeholder="Enter Your First Name" autofocus>
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Enter Tour Last Name" autofocus>
+            <br>
+            <label for="mob">Mobile Name</label>
+            <input type="text" id="mob" placeholder="Enter Your Last Name"  autofocus>
+            <br>
+            <input type="reset" value="reset">
+
+        </form>
+        <input type="submit" value="submit" onclick="getData()" >
+
+        <h2 id="print"></h2>
+
+
+
+    <script>
+        function getData() {
+            let print=document.getElementById("print");
+
+            let fname=document.getElementById("fname").value;
+            let lname=document.getElementById("lname").value;
+
+            
+
+            print.innerHTML=fname+lname; 
+        }
+    </script>
+</body>
+</html>

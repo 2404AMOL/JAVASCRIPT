@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Validation Example</h2>
+    <form id="myForm" novalidate>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error" id="emailError"></div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            <div class="error" id="phoneError"></div>
+        </div>
+        <div class="form-group">
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" required>
+            <div class="error" id="zipError"></div>
+        </div>
+        <div class="form-group">
+            <label for="date">Date (MM/DD/YYYY):</label>
+            <input type="text" id="date" name="date" required>
+            <div class="error" id="dateError"></div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="error" id="passwordError"></div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form values
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const zip = document.getElementById("zip").value;
+    const date = document.getElementById("date").value;
+    const password = document.getElementById("password").value;
+
+    // Validate fields
+    const emailValid = validateEmail(email);
+    const phoneValid = validatePhoneNumber(phone);
+    const zipValid = validateZipCode(zip);
+    const dateValid = validateDate(date);
+    const passwordValid = validatePassword(password);
+
+    // Display error messages
+    document.getElementById("emailError").textContent = emailValid ? "" : "Invalid email address.";
+    document.getElementById("phoneError").textContent = phoneValid ? "" : "Invalid phone number.";
+    document.getElementById("zipError").textContent = zipValid ? "" : "Invalid zip code.";
+    document.getElementById("dateError").textContent = dateValid ? "" : "Invalid date format.";
+    document.getElementById("passwordError").textContent = passwordValid ? "" : "Invalid password format.";
+
+    // Check if all fields are valid
+    if (emailValid && phoneValid && zipValid && dateValid && passwordValid) {
+        alert("Form submitted successfully!");
+        // Optionally, you can submit the form here
+        // this.submit();
+    }
+});
+
+// Validation functions
+function validateEmail(email) {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+}
+
+function validatePhoneNumber(phone) {
+    const regex = /^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
+    return regex.test(phone);
+}
+
+function validateZipCode(zip) {
+    const regex = /^\d{5}(-\d{4})?$/;
+    return regex.test(zip);
+}
+
+function validateDate(date) {
+    const regex = /^(0[1-9]|1[0-2])\/(0[1-9]|[12]\d|3[01])\/\d{4}$/;
+    return regex.test(date);
+}
+
+function validatePassword(password) {
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return regex.test(password);
+}
+
+    </script>
+
+</body>
+</html>

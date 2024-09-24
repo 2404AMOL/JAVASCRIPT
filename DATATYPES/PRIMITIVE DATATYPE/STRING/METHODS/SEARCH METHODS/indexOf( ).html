@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! indexOf()  -->
+    <!--* The indexOf() method returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found:  -->
+    <!--? 1.Returns the first index of the value in the string if it is present at least once.  -->
+    <script>
+        let text = "Please locate where 'locate' occurs!";
+        console.log(text.indexOf("a"));//3
+        console.log(text.indexOf("locate"));//7
+    </script>
+
+    <!--? 2. Returns -1 if the value is not found:  -->
+    <script>
+        let str = "Apple, Banana, Kiwi";
+        console.log(str.indexOf("orange"));//-1
+    </script>
+    
+    <!--? 3.The indexOf() method is case sensitive.    -->
+    <script>
+        let str1 = "Apple, Banana, Kiwi";
+        console.log(str.indexOf("apple"));//-1
+    </script>
+
+    <!--? 4.For empty string searchValue and fromIndex less than the string's length, indexOf returns the value the same as fromIndex  -->
+    <script>
+        let str2 = "Apple, Banana, Kiwi";
+        console.log(str2.indexOf("", 10));//10
+    </script>
+
+    <!--? 5.Similarly, for empty string searchValue and fromIndex greater than the string's length, indexOf returns the string's length.  -->
+    <script>
+        let str3 = "Apple, Banana, Kiwi";
+        console.log(str3.indexOf("", 55));//19
+    </script>
+</body>
+</html>

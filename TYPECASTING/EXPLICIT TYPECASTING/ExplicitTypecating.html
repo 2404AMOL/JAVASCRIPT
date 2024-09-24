@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! Important Rules  -->
+    <!--* 1. Number + Number = Number  -->
+    <!--* 2. Number + "String" = String  -->
+    <!--* 3. "String" + Number = String  -->
+    <!--* 4. Boolean + "String" = String  -->
+
+    <!--* ""  : It is considered as false means Zero(0)-->
+    <!--* " " : It is considered as false means Zero(0) -->
+    <!--* null : It is considered as false means Zero(0)  -->
+    <!--* Negative Integer Value : It is considered as false means Zero(0)  -->
+    <!--* undefined : It is considered as false means Zero(0)  -->
+    <!--* NaN : It is considered as false means Zero(0)  -->
+
+    <!--* "string" :(The String which is Not Empty is Considered as true) It is considered as true means One(1)  -->
+
+    
+    <script>
+
+        console.log(Number("10")+10);
+
+        console.log(true+Boolean("false"));
+
+        console.log(String(true)-true);
+
+        console.log(Boolean(2)+false);
+
+        console.log(Number(true)+"33");
+
+        console.log(Number(null)+null);
+
+        console.log(Boolean("true"));
+
+        console.log(Boolean("false"));
+
+        console.log(Boolean("Ganya"));
+
+        console.log(String("10")+Boolean(true));
+
+        console.log(Number("10")+String(null));
+
+        console.log(Boolean("-10")+true);
+
+        console.log(Boolean(-10)+true);
+
+    </script>
+
+</body>
+</html>

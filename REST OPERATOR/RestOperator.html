@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! REST OPERATOR  -->
+    <!--todo : REST OPERATOR is compress the value  -->
+    <!--* It will accept the infinite Number Values and store it in variable later you can access that values.  -->
+    <!--! We cannot use the More than one REST OPERATOR   -->
+    <!--! If You are trying to add then the First REST PARAMETER it will take that value.  -->
+    <!--* Because the REST OPERATOR is either First or Last  -->
+    <!--? Syntax : ...variableName  -->
+    <script>
+        function print(V1,...count) {
+            console.log(count);
+            console.log(V1);
+            console.log(...count);
+
+            for (const x of count) {
+                console.log(x);
+            }
+        }
+
+        print(10,20,30,40,50,60,70,80,90)
+    </script>
+</body>
+</html>

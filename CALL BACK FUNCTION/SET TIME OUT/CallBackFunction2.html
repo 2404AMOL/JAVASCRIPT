@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let stocks = {
+            Fruits : ["Graphes","Straberry","Mango","Banana","Guava"],
+            Liquid : ["Water","Milk","Ice"],
+            Dairy : ["Yogurt","Cheese","Butter"],
+            Meat : ["Chicken","Beef","Pork"]
+        }
+
+        let order = (fruit_name,call_production) =>{
+            setTimeout(() => {
+                console.log(`${stocks.Fruits[fruit_name]} was Selected`)
+            },2000)
+
+            call_production();
+        }
+
+        let production = () =>{
+                setTimeout(() => {
+                    console.log("Order Recived");
+
+                    setTimeout(() => {
+                        console.log("Fruits was Chopped ");
+
+                        setTimeout(()=>{
+                            console.log(`${stocks.Liquid[1]} Was Added`)
+                        
+                            setTimeout(()=>{
+                                console.log(`${stocks.Dairy[0]} Was Maked`)
+                            
+                                setTimeout(()=>{
+                                    console.log(`${stocks.Meat[1]} Was Grilled`)
+                                },8000)
+
+                            },6000)
+                    },4000)
+
+                },2000)
+            
+            },2000)
+        }
+        
+        order(1,production); // Change 1 with your desired fruit index
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 8.Frozen()  -->
+    <!--todo : it is used to check the Object is Freezed or Not  -->
+    <!--? true : true means the object is freezed  -->
+    <!--? false : false means the Object is Not Freezed  -->
+    <script>
+        let duster  = {
+            company : "camline",
+            weight : "200gm",
+            height : "12cm",
+            price :"100rs"
+        }
+
+        console.log(Object.freeze(duster));
+        console.log(Object.isFrozen(duster));
+        console.log(duster);
+    </script>
+</body>
+</html>

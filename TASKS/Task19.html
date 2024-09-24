@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="print"></p>
+    <button onclick="getStart()">START</button>
+    <button onclick="getStop()">STOP</button>
+    <script>
+        let a=0;
+        let print=document.getElementById("print");
+        let timer
+        function getStart(){
+            timer = setInterval(()=>{
+                    print.innerHTML=++a;
+            },1000)
+        }
+        function getStop(){
+            clearInterval(timer)
+        }
+    </script>
+</body>
+</html>

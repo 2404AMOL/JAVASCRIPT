@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDIV">
+        <p>I am a p element inside "myDIV", and I have a <span id="mySPAN"><b>span</b></span> element inside of me.</p>
+    </div>
+
+    <h3 id="demo"></h3>
+    <script>
+
+    const span = document.getElementById("mySPAN");
+    let answer = document.getElementById("myDIV").contains(span);
+    document.getElementById("demo").innerHTML = answer;
+    </script>
+        
+</body>
+</html>

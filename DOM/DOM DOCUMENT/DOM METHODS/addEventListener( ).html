@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 1.addEventListener()  -->
+    <!--? The addEventListener() method attaches an event handler to a document. -->
+    <h1>The Document Object</h1>
+    <h2>The addEventListener() Method</h2>
+    
+    <p>Click anywhere in the document to display "Hello World!".</p>
+    
+    <p id="demo"></p>
+
+    <div id="Circle">
+
+    </div>
+
+    <button id="btn">CLICK</button>
+    <script>
+        document.addEventListener("click",myFunction)
+
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "Hello World!";
+        }
+    </script>
+
+    <script>
+        document.getElementById("btn").addEventListener("click",myFunction2)
+
+        function myFunction2(){
+          let Circle = document.getElementById("Circle");
+          Circle.style.backgroundColor = "red";
+          Circle.style.height = "200px";
+          Circle.style.width = "200px";
+          Circle.style.border = "1px solid";
+          Circle.style.borderRadius = "50%";
+        }
+    </script>
+</body>
+</html>

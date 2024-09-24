@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! const  -->
+    <!--! Declaration : Declaration is Not Possible  -->
+    <!--* Declaration with Initialization : It is Possible with const variable  -->
+    <!--! Re-Declaration : Re-Declaration is Not Possible in const variable -->
+    <!--! Re-Initialization : Re-Initialization is Not Possible in const variable -->
+    <!--* Scope : Block / Local  -->
+    <!--! Hoisting : Hoisting is Not Possible  -->
+
+
+    <!--! 1.Declaration : Declaration is Not Possible  -->
+    <script>
+        //1.Declaration
+        const a; // It will throw an error "Uncaught SyntaxError: Missing initializer in const declaration"
+    </script>
+
+    <!--? 2.Declaration with Initialization : It is Possible with const variable  -->
+    <script>
+        //2.Declaration with Initialization
+        const b=10;
+        console.log(b); //10
+    </script>
+    
+    <!--! 3. Re-Declaration : Re-Declaration is Not Possible in const variable -->
+    <script>
+        //3. Re-Declaration
+        const b=20; // It will throw an error "Uncaught TypeError: Assignment to constant variable."
+        console.log(b); //20
+    </script>
+    
+    <!--! 4. Re-Initialization : Re-Initialization is Not Possible in const variable -->
+    <script>
+        //4. Re-Initialization
+        const c=10;
+        c=20; // It will throw an error "Uncaught TypeError: Assignment to constant variable."
+        console.log(b); //20
+    </script>
+    
+    <!--! 5. Scope : Block / Local  -->
+    <script>
+        //5.Scope
+        {
+            const d=30;
+            console.log(d); //30
+        }
+        console.log(d); // It will throw an error "Uncaught ReferenceError: d is not defined"
+    </script>
+    
+    <!--! 6. Hoisting : Hoisting is Not Possible  -->
+    <script>
+        //6. Hoisting
+        console.log(e); // It will throw an error "Uncaught ReferenceError: e is not defined"
+        var e=10;
+    </script>
+</body>
+</html>

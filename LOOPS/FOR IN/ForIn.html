@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! Difference Between For Of and For In  -->
+    <!--* For in Loop used to only Object. -->
+    <!--* For of Loop used to Only Array.  -->
+    <!--? If the for of loop applied to the object It gives an error Called Object is not Iterable.  -->
+    <script>
+        let obj = {
+            name : "Amol",
+            age : 24,
+            city : "Pandharpur"
+        }
+        
+        for (const key in obj) {
+            console.log(key);
+        }
+
+        for (const element of Object.values(obj)) {
+            console.log(element)
+        }
+    </script>
+
+</body>
+</html>

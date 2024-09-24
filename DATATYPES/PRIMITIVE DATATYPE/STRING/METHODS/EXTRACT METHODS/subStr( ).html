@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! subStr()  -->
+    <!--* 1.-substr() is similar to slice(). -->
+    <!--* 2.-The difference is that the second parameter specifies the length of the extracted part. -->
+    <!--* 3.Syntax: -->
+    <!--* 4.subStr(start-index, define-length) -->
+    <!--* 5.start-index:-Define the Start index when you start. -->
+    <!--* 6.Define-length:-After define the length of string that from starting point you want to extracted. -->
+
+    <script>
+        let text = "Let's Learn JavaScript."
+        console.log(text.substr(6))//Learn JavaScript.
+        console.log(text.substr(6,5))//Learn
+        console.log(text.substr(-11,11))//JavaScript.
+    </script>
+</body>
+</html>

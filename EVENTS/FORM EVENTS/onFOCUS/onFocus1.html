@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+
+        }
+        input{
+            height: 55px;
+            width: 650px;
+            margin: 24px auto;
+            border: none;
+            background-color: #edf1f4;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <!--! 6.onFocus  -->
+    <div>
+        <input type="text" id="inp" onfocus="getFocus()" placeholder="Enter The Text">
+    </div>
+    <script>
+        let input=document.getElementById("inp");
+
+        function getFocus()
+        {
+            input.style.backgroundColor="red";
+            input.style.border="none"
+            input.style.outline="none"
+            input.style.color="white";
+        }
+    </script>
+</body>
+</html>

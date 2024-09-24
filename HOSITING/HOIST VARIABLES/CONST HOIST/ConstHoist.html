@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!--! In the const case the Hoisting works differently  -->
+    <!--? ReferenceError: Cannot access 'a' before initialization -->
+    <!--* It goes in the Temporal Dead Zone  -->
+    <!--* It hosted but the the value of that variable is not initialized  -->
+    <script>
+        console.log(a)
+        const a=10;
+    </script>
+</body>
+</html>

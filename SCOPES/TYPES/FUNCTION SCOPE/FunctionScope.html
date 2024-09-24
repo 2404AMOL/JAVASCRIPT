@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! FUNCTION SCOPE  -->
+    <!--* Variables defined inside a function are not accessible (visible) from outside the function. -->
+    <!--* Variables declared with var, let and const are quite similar when declared inside a function. -->
+
+    <script>
+        function function1(){
+            var a=10;
+        }
+        console.log(a); // ReferenceError: a is not defined
+
+        function function2(){
+            let b=10;
+        }
+        console.log(b);  // ReferenceError: b is not defined
+
+        function function3(){
+            const c=10;
+        }
+        console.log(c); // ReferenceError: c is not defined
+    </script>
+</body>
+</html>

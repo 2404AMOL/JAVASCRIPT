@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! Local Scope  -->
+    <!--? Let is Local Scope Variable  -->
+    <!--* We write inside the function it makes all the variable to Locally Scope -->
+    <!--* Local variables have Function Scope: -->
+    <!--* They can only be accessed from within the function -->
+    <script>
+
+        function LocalScope() {
+            var a=10;
+            let b=20;
+            const c=20;    
+        }
+
+        LocalScope();
+
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    </script>
+</body>
+</html>

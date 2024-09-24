@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! FOR EACH LOOP  -->
+    <!--? forEach(function(currentValue,index,arr),thisValue)  -->
+
+    <!--* function : Required  -->
+    <!--todo : A function to run for Each Array Element  -->
+
+    <!--* CurrentValue : Required  -->
+    <!--todo : The value of the current element   -->
+
+    <!--* index : Optional  -->
+    <!--todo : The index of the current element  -->
+
+    <!--* arr : Optional  -->
+    <!--todo : The Array of the current element  -->
+
+    <!--* thisValue : Optional  -->
+    <!--todo : A value Passed to the function as its thisValue  -->
+
+    <script>
+
+    let sum = 0;
+    const numbers = [1,2,3,4,5,6,7];
+    numbers.forEach(myFunction);
+
+    function myFunction(item) {
+    sum += item;
+    }
+    document.write(sum)
+    </script>
+</body>
+</html>

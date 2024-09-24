@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Circle">
+
+    </div>
+
+    <button id="btn">CLICK</button>
+    <button id="Remove">Remove Event</button>
+
+    <script>
+        document.getElementById("btn").addEventListener("click",myFunction2)
+
+        function myFunction2(){
+          let Circle = document.getElementById("Circle");
+          Circle.style.backgroundColor = "red";
+          Circle.style.height = "200px";
+          Circle.style.width = "200px";
+          Circle.style.border = "1px solid";
+          Circle.style.borderRadius = "50%";
+
+
+        }
+        document.getElementById("Remove").addEventListener("click",function(){
+            document.getElementById("btn").removeEventListener("click", myFunction2)
+        })
+
+
+    </script>
+</body>
+</html>

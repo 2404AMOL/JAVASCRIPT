@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="print()"></p>
+   <script>
+    let a=0;
+    let print=document.getElementById("print");
+    
+    setInterval(()=>{
+        ++a;
+        if(a%2==0)
+        {
+            console.log(a+" Even");
+        }
+        else
+        {
+            document.write=a+" odd";
+        }
+    },1000)
+    
+   </script>
+</body>
+</html>

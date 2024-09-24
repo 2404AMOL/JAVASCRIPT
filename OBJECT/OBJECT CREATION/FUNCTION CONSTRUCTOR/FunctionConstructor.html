@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 3.BY USING FUNCTION CONSTRUCTOR  -->
+    <!--todo this : this keyword is points to the Current Reference  -->
+    <!--* Here Function can considered as Class we can create the Object for the this Function  -->
+
+    <script>
+        function Emp(ename,eid,esal) {
+            this.ename=ename;
+            this.eid=eid;
+            this.esal=esal;
+        }
+
+        let emp = new Emp("Amol",123,35000);
+        console.log(emp);
+    </script>
+</body>
+</html>

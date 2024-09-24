@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        let promise=new Promise((resolve,rejet)=>{
+
+            setTimeout(()=>{
+                let prom1="Drawing Circle";
+
+                resolve(prom1)
+                rejet(`Not Executed`)
+
+            },4000)
+        });
+
+        promise.then((prom1)=>{
+            let ele=document.getElementById("box");
+                ele.style.height="350px";
+                ele.style.width="350px";
+                ele.style.borderRadius="50%"
+                ele.style.backgroundColor="red"
+            console.log("Executed");
+        }).catch((err)=>{
+            console.log(err);
+        })
+    </script>
+</body>
+</html>

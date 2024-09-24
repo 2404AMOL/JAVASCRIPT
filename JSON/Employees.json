@@ -1,0 +1,35 @@
+{
+    "employee1":{
+        "ename" : "Rohit",
+        "eid" : 111,
+        "designation" : "System Engineer",
+        "salary" :5000
+    },
+    "employee2":{
+        "ename" : "Amol",
+        "eid" : 124,
+        "designation" : "Software Developer",
+        "salary" :35000
+    },
+    "employee3":{
+        "ename" : "Ganesh",
+        "eid" : 123,
+        "designation" : "Network Engineer",
+        "salary" :25000
+    },
+    "employee4":{
+        "ename" : "Ashutosh",
+        "eid" : 122,
+        "designation" : "Cyber Engineer",
+        "salary" :15000
+    },
+    "employee5":{
+        "ename" : "Omkar",
+        "eid" : 125,
+        "designation" : "Software Engineer",
+        "salary" :25000
+    }
+
+
+}
+ 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = document.createElement("h2");
+        var b = document.createTextNode("Hello");
+
+        a.appendChild(b);
+
+        document.body.appendChild(a)
+
+        var x = document.createElement("h1");
+        x.innerText="Hello This is Heading Two"
+
+        document.body.appendChild(x);
+    </script>
+</body>
+</html>

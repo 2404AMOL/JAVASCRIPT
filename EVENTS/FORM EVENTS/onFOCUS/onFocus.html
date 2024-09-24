@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! onFocus  -->
+
+    <fieldset>
+        <legend>STUDENT FORM</legend>
+        <form action="">
+            <label for="">First Name : </label>
+            <input type="text" name="" id="Fname" onfocus="handleFocus()">
+            <br>
+            <label for="">Last Name : </label>
+            <input type="text" name="" id="Lname" onfocus="handleFocus()">
+            <br>
+            <label for="">Email : </label>
+            <input type="email" name="" id="Email" onfocus="handleFocus()">
+            <br>
+    
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+        </form>
+    </fieldset>
+
+    
+    <script>
+        let fname = document.getElementById("Fname");
+        let lname = document.getElementById("Lname");
+        let email = document.getElementById("Email")
+
+        function handleFocus(){
+            fname.style.backgroundColor="yellow"
+            lname.style.backgroundColor="yellow"
+            email.style.backgroundColor="yellow"
+
+        }
+    </script>
+</body>
+</html>

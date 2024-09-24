@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! BLOCK SCOPE  -->
+    <!--* The Variable Are declared inside the Block It is called as Block Scope Variable   -->
+    <!--* Variables declared inside a { } block can be accessed from outside the block. -->
+    <!--* The Variable inside the Block is not accessible outside the Block   -->
+    <!--? ES6 introduced two important new JavaScript keywords: let and const. -->
+    <!--? These two keywords provide Block Scope in JavaScript. -->
+
+    <!--* Variables declared with the var keyword can NOT have block scope. -->
+
+    <script>
+        
+        {
+            var a = 10;
+            let b = 20;
+            const c = 30;
+        }
+
+        console.log(a);  //! Accessed
+        console.log(b);  //! Cannot Be accessed ERROR
+        console.log(c);  //! Cannot Be accessed ERROR
+    </script>
+
+    <!--! var : var is not Block Scope Variable so it Accessed -->
+    <!--! let or const : let or const is block scope variable so it cannot accessed from outside.  -->
+
+
+</body>
+</html>

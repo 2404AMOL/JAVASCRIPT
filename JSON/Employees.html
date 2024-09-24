@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch("./Employees.json").then((response) =>{
+            return response.json();
+        }).then((data) =>{
+            console.log(data);
+            console.log(data.employee2.ename);
+            console.log(data.employee3.ename);
+
+            
+            //We can also manipulate the Data
+            data.employee2.location = "Pandharpur";
+            console.log(data.employee2);
+
+            //We can also iterate the data
+
+            for (const x in data) {
+                document.write(x+ "</br>")
+            }
+
+            for(const a in data.employee2){
+                document.write(a+": "+data.employee2[a]+"<br>")
+            }
+        
+        })
+
+    </script>
+</body>
+</html>

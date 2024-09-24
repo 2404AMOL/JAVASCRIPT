@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 6.isSealed()  -->
+    <!--todo :  it is used to check Object is Sealed or Not   -->
+    <!--? true : true means the Object is Sealed  -->
+    <!--? false : false means the Object is Not Sealed  -->
+    <script>
+        let property = {
+            car : "Honda City",
+            watch : "G Shock",
+            house : "Banglow"
+        }
+        console.log(property);
+        property.bike="Bullet 350"
+        console.log(property);
+
+        console.log(Object.seal(property));
+
+        property.car = "Nano"
+        console.log(property);
+
+        property.privateJet ="6089 Gear Train"
+        console.log(property);
+
+        console.log(Object.isSealed(property));
+    </script>
+</body>
+</html>

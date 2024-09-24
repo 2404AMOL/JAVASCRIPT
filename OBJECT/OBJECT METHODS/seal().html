@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 5.seal()  -->
+    <!--todo : It is used to seal the Object  -->
+    <!--? Seal mean you can Lock the Object  -->
+    <!--* If the Object once the sealed then you cannot do any Modification in the Object.  -->
+    <!--* You can Modify Only the existing Key and Value pair of the Object  -->
+    <!--* You cannot add the New Keys and Value pair in the Object    -->
+
+    <script>
+        let property = {
+            car : "Honda City",
+            watch : "G Shock",
+            house : "Banglow"
+        }
+        console.log(property);
+        property.bike="Bullet 350"
+        console.log(property);
+
+        console.log(Object.seal(property));
+
+        property.car = "Nano"
+        console.log(property);
+
+        property.privateJet ="6089 Gear Train"
+        console.log(property);
+    </script>
+</body>
+</html>

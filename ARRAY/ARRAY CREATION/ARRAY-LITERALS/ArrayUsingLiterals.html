@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 1.ARRAY BY USING LITERALS  -->
+    <script>
+        let array = [10,20,30,40,50];
+        console.log(typeof array);
+        console.log(array[0]);
+        console.log(array[1]);
+        console.log(array[2]);
+        console.log(array[3]);
+        console.log(array[4]);
+        console.log(array[5]);
+    </script>
+
+    <!--* We can also initialize the after Indexed in the Array & those array index we have not defined it will consider as Empty Element  -->
+    <!--* After printed that array that it show empty and type of undefined. -->
+    <!--! In this if you add value after some indexes then that index is considered as undefined [ Which is Datatype in Javascript ] -->
+    <!--! After adding values it wil updated in first printed array also in Console -->
+    <!--? Because the browser console read the whole code and then updated.  -->
+    <!--? If you want check the Correct output then you have to use the Document.write()  -->
+    <script>
+    let arr = [10,true,null,'Apple'];
+    document.write(arr);
+    document.write(arr.length);
+
+    arr[7]="Amol";//Here we can directly define the array index after index value
+    document.write(arr);
+    document.write(arr.length);
+
+
+    console.log(arr[9]);
+    arr[9]="Banana";
+    console.log(arr[9]);
+    console.log(arr);
+    console.log(arr.length);
+    </script>
+
+    <!--! Here we can Delete the value present in Array Indexes using the delete Keyword  -->
+    <!--* The delete keyword deleted the value but after deleted value the Array Length remains same.  -->
+    <!--* That deleted position the Js Engine or Interpreter adds the undefined value  -->
+    <!--! The delete keyword does not delete the Array Index Value it will deleted the value inside the index  -->
+
+    <script>
+        let arrRef = [10,20,30,{name:"Amol",Age:24,Proff:"Software Developer",},50];
+        arrRef[8]={name:"Mango"};
+        console.log(arrRef)
+        console.log(arrRef.length)
+        delete arrRef[3];
+        console.log(arrRef.length)
+        console.log(arrRef[3])
+        console.log(arrRef[6])
+
+    </script>
+
+</body>
+</html>

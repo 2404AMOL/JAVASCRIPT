@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--! let  -->
+    <!--* Declaration : Declaration is Possible  -->
+    <!--* Declaration with Initialization : It is possible with let variable  -->
+    <!--! Re-Declaration : Re-Declaration is Not Possible in let variable -->
+    <!--* Re-Initialization : Re-Initialization is Possible in let variable -->
+    <!--* Scope : Block Scope  -->
+    <!--! Hoisting : Hoisting is Not Possible  -->
+
+    <!--? 1.Declaration : Declaration is Possible  -->
+    <script>
+        //1.Declaration
+        let a;
+        console.log(a);
+    </script>
+
+    <!--? 2.Declaration with Initialization : It is possible with let variable  -->
+    <!--* We have take care about that the variable is not declared in above script or before it.  -->
+    <script>
+        //2.Declaration with Initialization
+        let b=10;
+        console.log(b);
+    </script>
+    
+    <!--! 3. Re-Declaration : Re-Declaration is Not Possible in let variable -->
+    <script>
+        //3. Re-Declaration
+        let a=20;
+        console.log(a);
+    </script>
+    
+    <!--? 4. Re-Initialization : Re-Initialization is Possible in let variable -->
+    <!--* We have take care about that the variable is declared and initialized in above script or before it.  -->
+    <script>
+        //4. Re-Initialization
+        let c=30;
+        console.log(c);
+    </script>
+    
+    <!--? 5. Scope : Block Scope  -->
+    <!--* Let variable has block scope. It means it is not accessible outside of the block where it is defined.  -->
+    <script>
+        //5. Scope
+        {
+            let c=40;
+            console.log(c);
+        }
+        console.log(c); // ReferenceError: c is not defined
+    </script>
+    
+    <!--! 6. Hoisting : Hoisting is Not Possible  -->
+    <!--* Let variable does not hoist. It means it is not accessible before its declaration.  -->
+    <script>
+        //6. Hoisting
+        console.log(d); // ReferenceError: d is not defined
+    </script>
+
+</body>
+</html>

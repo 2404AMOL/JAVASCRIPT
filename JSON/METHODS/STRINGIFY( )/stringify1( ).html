@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="Container">
+      <h1 id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam labore
+        ipsa, dolorum distinctio excepturi accusamus. Error eos molestias
+        ratione. Doloribus dolor quasi quae numquam.
+      </h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, tenetur ut.</p>
+    </div>
+
+    <script>
+        let html = document.getElementById("Container").innerText;
+        let temp = {"html":html};
+        let obj = JSON.stringify(temp);
+        console.log(obj)
+    </script>
+  </body>
+</html>

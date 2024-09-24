@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! startsWith()  -->
+    <!--? 1.The startsWith() method returns true if a string begins with a specified value.Otherwise it returns false:  -->
+    <script>
+        let text = "Hello world, welcome to the universe.";
+        console.log(text.startsWith("Hello"));
+    </script>
+
+    <!--? 2.-The startsWith() method is case sensitive.  -->
+    <script>
+        let text1 = "Hello world, welcome to the universe.";
+        console.log(text1.startsWith("Hello"));
+    </script>
+
+    <!--? 3.second argument specifies the starting position-->
+    <script>
+        let sentence = "Java is to JavaScript what Car is to Carpet.";
+        let check3 = sentence.startsWith("JavaScript", 11);
+        console.log(check3); // true
+    </script>
+</body>
+</html>

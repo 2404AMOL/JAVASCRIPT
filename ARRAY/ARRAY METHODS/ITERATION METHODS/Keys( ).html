@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("This is Example 2")
+
+        const array1 = ['a', 'b', 'c'];
+        const arr1 = array1.keys();
+
+        for (const key of arr1) {
+        console.log(key);
+        }
+    </script>
+
+    <script>
+        console.log("This is Example 2")
+        let languages = ["JavaScript", "Java", "C++", "Python"];
+
+        // returns an Array Iterator Object that contains keys 
+        let iterator = languages.keys();
+
+        // looping through the iterator object
+        for (let key of iterator) {
+        console.log(key);
+        }
+    </script>
+
+    <p id="demo"></p>
+    <script>
+        console.log("This is Example 3")
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        const keys = fruits.keys();
+
+        let text = "";
+        for (let key of keys) {
+        text += key + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+
+
+    </script>
+</body>
+</html>

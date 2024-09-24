@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 3.onMouseOut  -->
+    <!--*  It will starts the performing the action after hovering element (you move out the cursor from the element) -->
+    <h1 id="head" onmouseout="getOut()">Hello</h1>
+
+    <script>
+        let head=document.getElementById("head");
+        function getOut() {
+            head.innerHTML="Good Bye!";
+        }
+    </script>
+
+</body>
+</html>

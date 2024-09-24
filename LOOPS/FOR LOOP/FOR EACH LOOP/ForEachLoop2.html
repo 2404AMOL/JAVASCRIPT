@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+
+        }
+        .List{
+            height: 100vh;
+            width: 100%;
+            border: 1px solid;
+            /* display: flex;
+            justify-content: space-evenly;
+            align-items: center; */
+            text-align: center;
+        }
+        .Items{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .Items image{
+            width: 65%;
+        }
+    </style>
+</head>
+<body>
+    <div class="List">
+
+    </div>
+    <script>
+
+    let list=document.querySelector('.List')
+    let products=[
+    {
+        image:'../../../../ASSETS/IMAGES/HTML5.png',
+        name:'HTML5',
+        price:'Rs2000/-',
+        
+    },
+    {
+        image:'../../../../ASSETS/IMAGES/CSS.png',
+        name:'CSS3',
+        price:'Rs3000/-',
+        
+    },
+    {
+        image:'../../../../ASSETS/IMAGES/JavaScript.png',
+        name:'JAVASCRIPT',
+        price:'Rs4000/-',
+        
+    },
+    {
+        image:'../../../../ASSETS/IMAGES/SQL.png',
+        name:'SQL',
+        price:'Rs3000/-',
+        
+    },
+    {
+        image:'../../../../ASSETS/IMAGES/MySQL.png',
+        name:'MYSQL',
+        price:'Rs5000/-',
+        
+    },
+    {
+        image:'../../../../ASSETS/IMAGES/CORE JAVA.png',
+        name:'CORE JAVA',
+        price:'Rs5500/-',
+        
+    },
+]
+    
+    function Demo(){
+            products.forEach(function(value){
+            let newDiv= document.createElement('div')
+            newDiv.classList.add('Items')
+            newDiv.innerHTML=
+            `
+                <img src="${value.image}"/>
+                <div class="title">${value.name}</div>
+                <div class="price">${value.price}</div>
+            `
+            list.appendChild(newDiv) 
+        })
+    }
+    Demo()
+    </script>
+</body>
+</html>

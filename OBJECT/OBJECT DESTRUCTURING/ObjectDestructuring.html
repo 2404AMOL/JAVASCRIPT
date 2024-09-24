@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! OBJECT DESTRUCTING [ESO6] -->
+    <!--todo : We does not need to take the Reference of object again and again for the access the Varaible   -->
+    <!--* We can directly access the Variable using Value  -->
+    <!--? Syntax 1 : let {property1:variable1,property2:variable2,property3:variable3} = Object Reference -->
+
+    <script>
+        let obj ={
+            Key1:"Value1",
+            Key2:"Value2",
+            Key3:"Value3"
+        }
+        console.log(obj.Key1);
+        console.log(obj.Key2);
+        console.log(obj.Key3);
+
+        const {Key1:var1,Key2:var2,Key3:var3} = obj;
+        console.log(var1);
+        console.log(var2);
+        console.log(var3);
+    </script>
+
+    <!--* We have to Take care that Original object Key Matching with Destructuring Keys  -->
+     <script>
+        const {key1,key2,key3} = obj;
+        console.log(key1);
+        console.log(key2);
+    </script>
+
+    <script>
+        let obj1={
+            name:"Amol",
+            age:24,
+            Proff:"Engineering"
+        }
+        console.log(typeof obj1);
+        console.log(obj1.name);
+        console.log(obj1.age);
+
+
+        //Object Destructuring
+        const {name:a,age:b,Proff:c} = obj1;
+
+        console.log(a);
+        console.log(b);
+    </script>
+
+   
+</body>
+</html>

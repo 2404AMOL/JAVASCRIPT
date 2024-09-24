@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h3>Example No 2</h3>
+
+     <button onclick="myFunction2()">STYLE</button>
+     <script>
+         function myFunction2(params) {
+             let attr1 = document.createAttribute("style");
+             attr1.value = "color: blue;";
+             let h3 = document.getElementsByTagName("h3")[0];
+             h3.setAttributeNode(attr1);
+         }
+     </script>
+</body>
+</html>

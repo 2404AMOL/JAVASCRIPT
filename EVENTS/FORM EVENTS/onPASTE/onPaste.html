@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" onpaste="getPaste()">
+    <p id="print"></p>
+    <script>
+        let ele=document.getElementById("input");
+        let print=document.getElementById("print");
+
+        function getPaste(params) {
+            print.innerHTML = "Your Text is Successfully Paste"
+            print.style.color="red";
+        }
+    </script>
+</body>
+</html>

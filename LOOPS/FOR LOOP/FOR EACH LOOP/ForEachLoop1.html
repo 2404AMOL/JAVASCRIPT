@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // JavaScript to illustrate forEach() method
+        function func() {
+
+        // Original array
+        const items = [12, 24, 36];
+        const copy = [];
+        items.forEach(function (item) {
+            copy.push(item + item);
+        });
+        document.write(copy);
+        }
+        func();
+
+    </script>
+</body>
+</html>

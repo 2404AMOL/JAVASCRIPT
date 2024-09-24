@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #images{
+            height: 500px;
+            width: 500px;
+            background-image: url();
+        }
+    </style>
+</head>
+<body>
+    <select name="" id="fruits"  onchange="getImages()">
+        <option value="apple">APPLE</option>
+        <option value="pineapple">PINEAPPLE</option>
+        <option value="mango">MANGO</option>
+        <option value="watermelon">WATERMELON</option>
+    </select>
+    <p id="print"></p>
+    <div id="images" >
+
+    </div>
+    <script>
+        let myFruit=document.getElementById("fruits");
+        let print=document.getElementById("print");
+        let images=document.getElementById("images");
+
+        function getFruits(params) {
+            print.innerHTML = `SELECTED FRUIT IS ${myFruit.value}`
+            print.style.color="red"
+        }
+
+        function getImages(params) {
+            if(myFruit.value == "apple")
+            {
+                images.style.backgroundImage="url(../../IMAGES/apple.jpg)"
+                images.style.backgroundSize="cover"
+                images.style.backgroundRepeat="no-repeat"
+                images.style.backgroundPosition="center"
+
+            }
+            else if(myFruit.value == "pineapple")
+            {
+                
+                images.style.backgroundImage="url(../../IMAGES/pineapple.jpg)"
+                images.style.backgroundSize="cover"
+                images.style.backgroundRepeat="no-repeat"
+                images.style.backgroundPosition="center"
+            }
+            else if(myFruit.value == "mango")
+            {
+             
+                images.style.backgroundImage="url(../../IMAGES/mango.png)"
+                images.style.backgroundSize="cover"
+                images.style.backgroundRepeat="no-repeat"
+                images.style.backgroundPosition="center"   
+            }
+            else if(myFruit.value == "watermelon")
+            {
+
+                
+                images.style.backgroundImage="url(../../IMAGES/watermelon.jpg)"
+                images.style.backgroundSize="cover"
+                images.style.backgroundRepeat="no-repeat"
+                images.style.backgroundPosition="center"   
+            }
+        }
+
+        // console.log(myFruit.value == "apple");
+    </script>
+</body>
+</html>

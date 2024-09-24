@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="Head">Head1</h1>
+    <p class="para">Para1</p>
+    <h1 class="Head">Head2</h1>
+    <p class="para">Para2</p>
+    <h1 class="Head">Head3</h1>
+    <p class="para">Para3</p>
+    <h1 class="Head">Head4</h1>
+    <p class="para">Para4</p>
+    <h1 class="Head">Head5</h1>
+    <p class="para">Para5</p>
+    <button onclick="show()">Show</button>
+
+    <script>
+        let headings=document.getElementsByClassName("Head");
+        let paragraphs=document.getElementsByClassName("para");
+
+        function show()
+        {
+            for (let i=0; i < headings.length; i++)
+            {
+                headings[i].style.color="red";
+                headings[i].innerHTML="This Is Headings";
+            }
+            for (let i=0; i < paragraphs.length; i++)
+            {
+                
+                paragraphs[i].style.color="blue";
+                paragraphs[i].innerHTML="This Is Paragraph";
+                
+            }
+        }
+        
+    </script>
+</body>
+</html>

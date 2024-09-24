@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onclick="myFunction()">
+    <!-- ! 1.activeElement -->
+    <!--? -The activeElement property returns the HTML element that have focus. -->
+    <!--? -The activeElement property is read-only. -->
+
+    <form action="">
+        <input type="text" placeholder="input text">
+    </form>
+
+    <button>BUTTON</button>
+
+    <h4 id="Head4"></h4>
+    <script>
+        function myFunction(){
+            const element = document.activeElement.tagName;
+
+            document.getElementById("Head4").innerHTML=element;
+        }
+    </script>
+    
+</body>
+</html>

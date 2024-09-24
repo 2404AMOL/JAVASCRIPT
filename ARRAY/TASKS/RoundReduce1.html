@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numbers = [15.5, 2.3, 1.1, 4.7];
+
+        function getSum(total, num) {
+        return total + Math.round(num); 
+        }
+        function myFunctionTwo(items) {
+        document.write(numbers.reduce(getSum, 0)); // this ZERO I need it explained. Is the initial value?
+        }
+        myFunctionTwo();
+    </script>
+</body>
+</html>

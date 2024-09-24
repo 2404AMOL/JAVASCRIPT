@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            height: 50px;
+            width: 100%;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo" onmousewheel="myFunction()">
+        <p>Roll the mouse wheel over me!</p>
+    </div>
+
+    <script>
+        function  myFunction(){
+            let element = document.getElementById("demo");
+            element.style.backgroundColor = "red";
+            element.style.fontSize="35px"
+            element.style.height="200px"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let obj={
+            name:"Amol",
+            address:{
+                country: "India",
+                State:{
+                    nameState:"Maharastra",
+                    Dist:{
+                        city: "Solapur",
+                        Tal: "Pandharpur",
+                        Pincode:413304,
+                    },
+                }
+            }
+        }
+
+        let {name,address:{country,State:{nameState,Dist:{city,Tal,Pincode}}}}=obj
+        console.log(name);
+        console.log(country)
+        console.log(nameState)
+        console.log(city)
+    </script>
+</body>
+</html>

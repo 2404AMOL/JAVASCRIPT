@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 1.getElementById();  -->
+    <!--* getElementById() by using this method we access the Html element using their Id's  -->
+    <!--? if you pass the ClassName in the getElementById() then it is Not Working  -->
+    <!--* Because it only Accept the Id's as an Argument.  -->
+
+    <div id="Circle"></div>
+    <button onclick="build()">Circle</button>
+    <button onclick="color()">Color</button>
+
+    <script>
+        let circle = document.getElementById("Circle");
+
+        function build(){
+            circle.style.height="500px";
+            circle.style.width="500px"
+            circle.style.border="1px solid";
+            circle.style.borderRadius="50%";
+        }
+        function color(){
+            circle.style.backgroundColor=prompt("Enter The Color")
+        }
+    </script>
+</body>
+</html>

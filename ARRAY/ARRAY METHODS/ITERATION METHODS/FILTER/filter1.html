@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let language = ["javascript","java","python","node","react","c","c++"]
+
+        function searchFor(arr,query){
+            function condition(element){
+                return element.toLowerCase().indexOf(query.toLowerCase())!==-1//If value is not present then it return -1
+
+            }
+            return arr.filter(condition);
+        }
+        let newArr = searchFor(language,"ja")
+        document.write(newArr)
+    </script>
+</body>
+</html>

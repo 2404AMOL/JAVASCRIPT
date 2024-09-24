@@ -1,0 +1,37 @@
+{
+    "tcs" : [
+                {
+                    "Employee1" : {
+                        "ename" : "Amol",
+                        "eid" : 124,
+                        "designation" : "Software Developer",
+                        "Salary" : 35000
+                    },  
+                    "Employee2" : {
+                        "ename" : "Ganesh",
+                        "eid"   : "125",
+                        "designation"  : "Network Engineer",
+                        "Salary" : 20000
+                    }
+                }
+    ],
+
+    "Infosys"   :   [
+                        {
+                            "employee1"  :  {
+                                "ename" :   "Onkar",
+                                "eid"   :   124,
+                                "designation"   :   "Software Engineer",
+                                "Salary"    :   30000
+                            },
+
+                            "employee2" :   {
+                                "ename" :   "Rohit",
+                                "eid"   :   125,
+                                "designation"   :   "System Engineer",
+                                "Salary"    :   21000
+                            }
+
+                        }
+    ]
+}

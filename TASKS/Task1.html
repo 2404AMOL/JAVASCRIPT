@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Parent() {
+            let persons = [true, true, false, true, false];
+
+            return () => {
+                // Log the registration status of each person
+                persons.forEach((isRegistered, index) => {
+                    console.log(`Person${index + 1} Is ${isRegistered ? '' : 'Not '}Registered`);
+                });
+
+                return () => {
+                    let Question = 1;
+
+                    // Iterate over each person and assign questions
+                    for (let i = 0; i < persons.length; i++) {
+                        if (persons[i]) {
+                            console.log(`Question No ${Question} For Person${i + 1}`);
+                            Question++;
+                            persons[i] = false; // Mark person as having received a question
+                        } else {
+                            console.log(`Person ${i + 1} Is Not Present`);
+                        }
+
+                        // Stop after 5 questions
+                        if (Question > 5) {
+                            break;
+                        }
+                    }
+                };
+            };
+        }
+
+        Parent()()();
+    </script>
+</body>
+</html>

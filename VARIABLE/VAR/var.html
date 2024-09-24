@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! var  -->
+    <!--* Declaration : Declaration is Possible  -->
+    <!--* Declaration with Initialization : It is possible with var variable  -->
+    <!--* Re-Declaration : Re-Declaration is Possible in var variable -->
+    <!--* Re-Initialization : Re-Initialization is Possible in var variable -->
+    <!--* Scope : Global  -->
+    <!--* Hoisting : Hoisting is possible  -->
+   
+    <!--? 1.Declaration : Declaration Is Possible  -->
+    <script>
+        console.log("Start");
+        // 1,Declaration
+        var declare;
+        console.log(declare);
+    </script>
+
+    <!--? 2.Declaration with Initialization : It is Possible with var variable.   -->
+    <script>
+        //2.Declaration with Initialization
+        var b=20;
+        console.log(b); 
+    </script>
+    
+    <!--? 3.Re-Declaration : Re-Declaration is Possible in var variable.   -->
+    <script>
+        //3.Re-Declaration
+        var a=10;
+        console.log(a);
+        var a=20;
+        console.log(a);
+    </script>
+    
+    <!--? 4.Re-Initialization : Re-Initialization is Possible in var variable.   -->
+    <script>
+        //4.Re-Initialization
+        var a=10;
+        console.log(a);
+        a=20;
+        console.log(a);
+    </script>
+
+    <!--? 5.Scope : Global  -->
+    <script>
+        console.log("Start");
+        //5.Scope
+        var a=10;
+        function start(){
+            //Block Scope
+            console.log(a);
+        }
+        start();
+        console.log(a);
+    </script>
+    <script>
+            console.log("Start");
+        //5.Scope
+        var a=20;
+        function start(){
+            //Block Scope
+            console.log(a);//undefined
+            //Re-Declaration
+            var a=30;
+            console.log(a);
+        }
+        start();
+        console.log(a);
+    </script>
+
+    <!--? 6.Hoisting : Hoisting Is Possible  -->
+    <script>
+        //6.Hoisting
+        hoist="Hoisting";
+        console.log(hoist);
+        var hoist;
+        console.log(hoist);
+    </script>
+
+</body>
+</html>

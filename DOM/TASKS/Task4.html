@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Head1"></h1>
+    <h2 id="Head2"></h2>
+    <h3 id="Head3"></h3>
+
+    <button onclick="Show()">Show</button>
+    <script>
+        let ele1=document.getElementById("Head1");
+        let ele2=document.getElementById("Head2");
+        let ele3=document.getElementById("Head3");
+
+
+        function Show(params) {
+            let user=window.prompt("Enter Your Element Name");
+            if(user=="ele1" ||user=="ELE2")
+            {
+                ele1.innerHTML="ELEMENT ONE";
+                ele1.style.color="Red";
+            }
+            else if(user=="ele2" ||user=="ELE2")
+            {
+                ele2.innerHTML="ELEMENT TWO";
+                ele2.style.color="Blue";
+            }
+            else if(user=="ele3" ||user=="ELE3")
+            {
+                ele3.innerHTML="ELEMENT THREE";
+                ele3.style.color="Yellow";
+            }
+            else{
+                alert("Element Is Not Found");
+            }
+        }
+
+    </script>
+</body>
+</html>

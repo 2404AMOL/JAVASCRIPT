@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    let Promise1=new Promise((resolve, reject) =>{
+    setTimeout(()=>{
+        let Question1=window.alert("What is the Color Of Blood ?1.Red 2.Green 3.Blue 4.Vilote");
+        let answer=prompt("Enter Your Answer");
+        if(answer=="red" || answer=="Red")
+        {
+            alert("Correct Answer");
+            resolve(Question1);
+        }
+        else
+        {
+            alert("Invalid Answer");
+            reject(answer)
+        }
+            
+        })
+    }).then(()=>{
+        que2();
+    }).catch((error)=>{
+        alert("You Cannot go to the Next Round")
+})
+
+    function que2() {
+        let Promise2=new Promise((resolve, reject) =>{
+            setTimeout(()=>{
+            let Question2=window.alert("What is the Color Of Moon ?1.Red 2.Green 3.Blue 4.White");
+            let answer=prompt("Enter Your Answer");
+            if(answer=="White" || answer=="white")
+            {
+                alert("Correct Answer");
+                resolve();
+            }
+            else
+            {
+            alert("Invalid Answer");
+            reject(answer) 
+            }            
+            })
+        }).then(()=>{
+            que3();
+        }).catch(()=>{
+            alert("You Cannot go to the Next Round")
+        })
+    }
+    function que3() {
+        let Promise3=new Promise((resolve, reject) =>{
+            setTimeout(()=>{
+            let Question3=window.alert("What is the Color Sea ?1.Red 2.Green 3.Blue 4.White");
+            let answer=prompt("Enter Your Answer");
+            if(answer=="Blue" || answer=="blue")
+            {
+                alert("Correct Answer");
+                resolve(Question3);
+            }
+            else
+            {
+            alert("Invalid Answer"); 
+            }            
+            })
+        }).then(()=>{
+            alert("You win the Competiton")
+        }).catch(()=>{
+            alert("You Cannot go to the Next Round")
+        })
+    }
+
+    
+
+
+
+   
+    
+    </script>
+</body>
+</html>

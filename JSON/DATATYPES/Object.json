@@ -1,0 +1,11 @@
+{
+    "student": {
+        "name": "Amol Pawar",
+        "age": 24,
+        "fullTime": true,
+        "languages": [ "JavaScript", "HTML", "CSS" ],
+        "GPA": 8.71,
+        "favoriteSubject": null
+      }
+    
+}

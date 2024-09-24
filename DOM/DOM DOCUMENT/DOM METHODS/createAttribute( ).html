@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--! createAttribute()  -->
+    <!--? EXAMPLE NO 1  -->
+    <h1>The Document Object</h1>
+    <h2>The createAttribute() and setAttributeNode() Methods</h2>
+
+    <p>Click "Add" to create a class attribute and add it to first h1 element.</p>
+
+    <button onclick="myFunction()">Add</button>
+
+    <script>
+        function myFunction(params) {
+            // Create a class attribute:
+            let att = document.createAttribute("class");
+            // Set a value of the class attribute
+            att.value = "demo";
+            // Add the class attribute to the first h1;
+            let h1 = document.getElementsByTagName("h3")[0];
+            h1.setAttributeNode(att);
+        }
+    </script>
+
+   
+</body>
+</html>

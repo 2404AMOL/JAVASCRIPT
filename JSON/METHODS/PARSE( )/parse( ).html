@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--!.parse(JSON ObjectName)  -->
+    <!--todo : It is used to convert the JSON object into the Normal object  -->
+    <!--* It is the parameterized method it will accept the JSON object  -->
+    <script>
+        let text = `{
+            "name"  :   "Amol",
+            "age"   :   24,
+            "proff" :   "Software Developer"
+        }`
+
+        let obj = JSON.parse(text)
+        console.log(obj);
+    </script>
+</body>
+</html>

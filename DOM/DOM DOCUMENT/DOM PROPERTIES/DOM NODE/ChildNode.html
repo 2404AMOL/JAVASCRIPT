@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+< <style>
+    #Outer{
+        background-color: yellow;
+        width: 900px;
+        height: 600px;
+        overflow: auto;
+        margin: 0 auto;
+    }
+    #Inner{
+        height: 500px;
+        width: 700px;
+        background-color: red;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 1px solid;
+    }
+    #Inner div{
+        height: 100px;
+        width: 100px;
+        border: 1px solid;
+        text-align: center;
+        line-height: 5;
+        background-color: hotpink;
+
+    }
+</style>
+</head>
+<body>
+<div id="Outer">
+    <h3>Hello</h3>
+    <div id="Inner">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+</div>
+
+    <script>
+        var x = document.getElementById("Inner").children;
+        console.log(x);
+
+        var y = document.getElementById("Inner").children[3];
+        console.log(y);
+
+        var z = document.getElementById("Inner").childNodes;
+        console.log(z);
+    </script>
+</body>
+</html>

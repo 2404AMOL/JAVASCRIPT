@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 3.assign()  -->
+    <!--todo :  It is ued to Merge two Different object  -->
+    <!--? But There is One problem in the assign() method  -->
+    <!--? If two different Object contains same keys then it will take Recent updated Key -->
+    <!--? Recent means the Second Object updated key it will take  -->
+    <!--* It Print the Recent updated Key -->
+    <!--* In assign() method we change order of an Object It will consider the Second Object as an Updated Key -->
+    <script>
+        let  car={
+            company : "TATA",
+            model : "Nano"
+        }
+        let engine={
+            engineOrigin : "German",
+            make : "India",
+            company : "Mercedes"//It print the Recent updated key
+        }
+        console.log(Object.assign(car,engine));
+        console.log(Object.assign(engine,car)); 
+    </script>
+    <script>
+        let hp={
+            Name : "Hp Pavilion ryzen 5",
+            ram : "8g"
+        }
+
+        let Assus = {
+            Graphic : "3060ti",
+            Display : "1080p"
+        }
+
+        let Lenovo = {
+            Refresh: "240hz",
+            ram : "16gb",
+            Name : "Leneovo Legion "
+        }
+        console.log(Object.assign(hp,Assus,Lenovo));
+    </script>
+</body>
+</html>

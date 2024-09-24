@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 2.onMouseOver  -->
+    <!--* It starts the action when the user will mouse hovering on the element  -->
+
+    <h1 id="head" onmouseOver="mouseOver()">Hi Hello</h1>
+
+    <script>
+        let head=document.getElementById("head");
+
+        function mouseOver()
+        {
+            head.innerHTML="Good Bye!";
+            head.style.color="red";
+        }
+    </script>
+</body>
+</html>

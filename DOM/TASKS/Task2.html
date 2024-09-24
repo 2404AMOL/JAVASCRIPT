@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <button onclick="myFunction()">Click</button>
+
+    <script>
+        function myFunction(params) {
+            let attr = document.createAttribute("style");
+
+            attr.value = "height:500px;width:500px;background:black;border-radius:50%";
+
+            let div = document.getElementsByTagName("div")[0];
+            div.setAttributeNode(attr)
+        }
+    </script>
+</body>
+</html>

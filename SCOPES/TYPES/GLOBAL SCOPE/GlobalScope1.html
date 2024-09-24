@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! Global variables defined with the let,Const keyword do not belong to the window object: -->
+    <script>
+        var car="Fortuner";
+        let Mobile="Iphone15";
+        const Bike="NS400";
+
+          function Global(params) {
+            console.log(window.car);
+            console.log(window.Mobile);
+            console.log(window.Bike);
+        }
+        Global();
+    </script>
+</body>
+</html>

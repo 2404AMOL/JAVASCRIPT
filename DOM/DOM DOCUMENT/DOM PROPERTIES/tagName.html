@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! tagName  -->
+    <!--* The tagName property returns the tag name of an element. -->
+    <!--* The tagName property returns the tag name in UPPERCASE. -->
+    <!--* The tagName property is read-only -->
+    <p id="Demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nemo pariatur cupiditate iusto repudiandae maxime sapiente hic optio ex labore, suscipit necessitatibus accusamus ullam?</p>
+    <h1 id="Head1"></h1>
+
+    <script>
+        let element = document.getElementById("Demo").tagName;
+
+        document.getElementById("Head1").innerHTML=element;
+    </script>
+</body>
+</html>

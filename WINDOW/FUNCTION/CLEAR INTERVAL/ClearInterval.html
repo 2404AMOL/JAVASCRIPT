@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Stop()">STOP</button>
+    <script>
+        let a=0;
+        let timer = setInterval(() =>{
+            a++;
+            console.log(a);
+        },1000)
+
+        function Stop(){
+            clearInterval(timer);
+            console.log("Timer stopped");
+            a = 0;
+            console.log(a); // To check if the variable is reset after stopping the timer. If it's not, then it's a memory leak. Otherwise, it's not.
+        }
+    </script>
+</body>
+</html>

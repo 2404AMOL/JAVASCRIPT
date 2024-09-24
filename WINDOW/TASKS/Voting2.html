@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = window.prompt("Enter Your Name");
+        let age = window.prompt("Enter Your Age");
+        let citizen = window.confirm("Do You have Indian CitizenShip");
+
+        if(age>=18 && citizen==true){
+            let voter = {VoterName:name,VoterAge:age,CitizenShip:citizen}
+            console.log(voter);
+
+            for (const x in voter) {
+                console.log(voter[x]);
+                document.write([x]+" : "+voter[x]+"<br>");
+                // document.write(`${x}: ${voter[x]}<br>`)
+
+            }
+        }
+        else
+        {
+            alert("Go To Home Watch Pogo")
+        }
+    </script>
+</body>
+</html>

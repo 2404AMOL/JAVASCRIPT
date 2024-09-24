@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! toUpperCase()  -->
+    <!--* 1. The toUpperCase() method returns the string converted to uppercase. -->
+    <!--* 2. The toUpperCase() method does not take in any parameters. -->
+    <!--? Notes: -->
+    <!--? The toLowerCase() method raises TypeError when called on null or undefined. -->
+    <!--? The toLowerCase() method does not change the original string. -->
+    <script>
+        let text = "hey hello..."
+        document.write(text+"</br>");//hey hello...
+        document.write(text.toUpperCase())//HEY HELLO...
+    </script>
+    <script>
+        let str=undefined;
+        console.log(str.toUpperCase());//TypeError: Cannot read properties
+    </script>
+</body>
+</html>

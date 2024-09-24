@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return validation()">
+        <input type="text" id="mob">
+        <br>
+        <span id="msg" style="color: red;"></span>
+        <br>
+        <input type="submit" value="SUBMIT">
+    </form>
+    <script>
+        function validation(){
+            let input = document.getElementById("mob").value;
+              //1.Check Empty
+            if(input ==""){
+                document.getElementById("msg").innerHTML = "Please Enter Mobile Number";
+                return false;
+            }
+            //2.Check Only Number
+            else if(isNaN(input)){
+                document.getElementById("msg").innerHTML = "Only Digit are Allowed";
+                return false;
+            }
+                 //3.Checks length
+            else if(input.length<10 || input.length>10){
+                document.getElementById("msg").innerHTML = "Mobile length should be less than 10 digit";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

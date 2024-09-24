@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! filter()  -->
+    <!--* filter Method is used to classify the data ( Filter The data )  -->
+    <!--* filter method is cannot Modify the Array  -->
+    <!--? Syntax : filter(Element,index)  -->
+    <!--todo : The map() method accept only two parameter 1.Elements 2.Index Value  -->
+    
+    <script>
+
+        let num = [10,20,30,40,50]
+        let filterArray=num.filter((data)=>{
+            if(data>10)
+            {
+                console.log(data)
+                // return data
+            }
+        })
+        console.log(filterArray)
+    </script>
+</body>
+</html>

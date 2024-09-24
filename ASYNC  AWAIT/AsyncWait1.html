@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <script>
+        let ele=document.getElementsByClassName("color");
+
+        let Red1=new Promise((resolve, reject) =>{
+
+            setTimeout(()=>{
+                resolve(ele[0].style.backgroundColor="red")
+                reject("Not Found");
+            },2000)
+        })
+
+        let Blue=new Promise((resolve, reject) =>{
+
+            setTimeout(()=>{
+                resolve(ele[1].style.backgroundColor="blue")
+                reject("Not Found");
+            },4000)
+        })
+
+        let Yellow=new Promise((resolve, reject) =>{
+
+            setTimeout(()=>{
+                resolve(ele[2].style.backgroundColor="yellow")
+                reject("Not Found");
+            },6000)
+        })
+
+        let Cyan=new Promise((resolve, reject) =>{
+
+            setTimeout(()=>{
+                resolve(ele[3].style.backgroundColor="cyan")
+                reject("Not Found");
+            },8000)
+        })
+
+        let Viloet=new Promise((resolve, reject) =>{
+
+            setTimeout(()=>{
+                resolve(ele[4].style.backgroundColor="violet")
+                reject("Not Found");
+            },10000)
+        })
+
+        let Wheat=new Promise((resolve, reject) =>{
+
+            setTimeout(()=>{
+                resolve(ele[5].style.backgroundColor="wheat")
+                reject("Not Found");
+            },12000)
+        })
+
+        let Teal=new Promise((resolve, reject) =>{
+
+            setTimeout(()=>{
+                resolve(ele[6].style.backgroundColor="teal")
+                reject("Not Found");
+            },14000)
+        })
+
+        async function rainbow(){
+            let Color1= await Red1
+            console.log(Color1);
+
+            let Color2= await Blue
+            console.log(Color2);
+
+            let Color3= await Yellow
+            console.log(Color3);
+            
+            let Color4= await Cyan
+            console.log(Color4);
+            
+            let Color5= await Viloet
+            console.log(Color5);
+
+            let Color6=await Wheat
+            console.log(Color6);
+            
+            let Color7=await Teal
+            console.log(Color7);
+        }
+
+        rainbow();
+    </script>
+</body>
+</html>

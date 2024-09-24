@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! CALL STACK  -->
+    <!--todo In JavaScript, the call stack is a data structure that keeps track of the execution context of functions.  -->
+    <!--todo It operates on a Last-In-First-Out (LIFO) principle, meaning the last function called is the first one to finish executing.  -->
+
+    <!--! Call Stack Progression: -->
+    <!--? foo() is called, and its execution context is pushed onto the call stack. -->
+    <!--? console.log("Inside foo") executes. -->
+    <!--? bar() is called, and its execution context is pushed onto the stack. -->
+    <!--? console.log("Inside bar") executes. -->
+    <!--? bar() completes, its context is popped off the stack. -->
+    <!--? foo() completes, its context is popped off the stack. -->
+    <script>
+        function foo() {
+            console.log("Inside foo");
+            bar();
+        }
+
+        function bar() {
+            console.log("Inside bar");
+        }
+
+        foo();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 7.freeze()  -->
+    <!--todo : It is used to freeze the Object  -->
+    <!--* Once the Object is Freezed then you cannot Modify the Object. It is in Strict Mode it cannot give permission to modify it  -->
+    <!--* In the freeze() method you cannot modify the existing Key and Value pairs also  -->
+    <!--? Here All in the Restricted Mode  -->
+    <script>
+        let duster  = {
+            company : "camline",
+            weight : "200gm",
+            height : "12cm",
+            price :"100rs"
+        }
+
+        console.log(Object.freeze(duster));
+        duster.color="Black";
+        duster.weight="300gm";
+        console.log(duster);
+    </script>
+</body>
+</html>

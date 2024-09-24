@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myBtn" onclick="myFunction()">BUTTON</button>
+
+    <p>Does the button have an onclick attribute:</p>
+    <h1 id="demo"></h1>
+
+    <script>
+        const button = document.getElementById("myBtn");
+        let answer = button.hasAttribute("onclick");
+        document.getElementById("demo").innerHTML=answer;
+    </script>
+</body>
+</html>

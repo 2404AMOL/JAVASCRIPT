@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 2.BY USING NEW KEYWORD  -->
+    <!--todo : JavaScript Is a Object Based Language so here we does not need to same Class Name as a Constructor  -->
+    <!--* We cn create the Object Directly : new Object()  -->
+    <!--* Here we cannot load the Class Member we can directly pass the Member in the Key Value Pair  -->
+    <!--?                                                    -->
+    <!--?   Object Reference Variable = syntax of object      -->
+    <!--?                                                    -->
+    <!--?       let  obj  = new Object();                    -->
+    <!--?                                                    -->
+    <!--?                                                    -->
+    <!--?                                                    -->
+    <!--?                                                    -->
+   
+
+    <script>
+        let obj = new Object();
+        console.log(obj);
+
+        obj.name="Amol";
+        obj.id=123;
+        console.log(obj);
+    </script>
+
+
+    <script>
+        let obj1= new Object();
+        obj1.nesObj={name:"Nested Object",type:"Object"}
+        obj1.fun=()=>{console.log("This is Object Function")}
+        console.log(obj1);
+        obj1.fun();
+    </script>
+
+
+    <script>
+        let obj3={
+            fun : function(){
+                let obj4={
+                    a:10,
+                    b:20,
+                    c:30
+                }
+            }
+        }
+        console.log(obj3);
+        obj3.fun();
+    </script>
+</body>
+</html>

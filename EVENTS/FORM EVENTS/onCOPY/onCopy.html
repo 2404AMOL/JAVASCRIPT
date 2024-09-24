@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="head" onclick="getCopy()">This is Heading Tag</h1>
+    <div id="box"></div>
+
+    <script>
+        let ele=document.getElementById("head");
+        let ele1=document.getElementById("box");
+
+        function getCopy() {
+            alert("Your Text is successfully copied!!!");
+
+            ele1.style.height="200px";
+            ele1.style.width="200px";
+            ele1.style.border="1px solid black";
+            ele1.style.borderRadius="100px";
+            ele1.style.backgroundColor="red";
+        }
+    </script>
+</body>
+</html>

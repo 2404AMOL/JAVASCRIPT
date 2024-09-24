@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! onSubmit  -->
+    <fieldset>
+        <legend>STUDENT FORM</legend>
+        <form action="" return onsubmit="validateForm()">
+            <label for="">First Name : </label>
+            <input type="text" name="" id="Fname" onfocus="handleFocus()">
+            <br>
+            <label for="">Last Name : </label>
+            <input type="text" name="" id="Lname" onfocus="handleFocus()">
+            <br>
+            <label for="">Email : </label>
+            <input type="email" name="" id="Email" onfocus="handleFocus()">
+            <br>
+            <label for="">UserName : </label>
+            <input type="text" name="" id="UserName" required>
+            <br>
+            <label for="">Password : </label>
+            <input type="password" name="" id="Pass" required>
+            <br>
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+        </form>
+
+        <script>
+
+            function validateForm(){
+                let userName = document.getElementById("UserName").value;
+                let password = document.getElementById("Pass").value;
+
+                if(userName == "" || password ==""){
+                alert("Please Enter The Username or Password");
+                 return false;
+            }
+            alert("Form Submitted! UserName is : "+userName+" ,Password is : "+password);
+             return false;
+            
+            }
+        </script>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! CALLBACK FUNCTION   -->
+    <!--todo : The Callback funtion is used to Call the Another Function after excution itself  -->
+    <!--* In CallBack Function First complete his Execution after some period of time it Call to the Another Function  -->
+    <script>
+        function person1(name,person2) {
+            console.log("Person 1 is Busy with "+name);
+            console.log("Person 3 Trying to Call Person 2")
+            setTimeout(person2,4000)
+        }
+        function person2() {
+            console.log("person 2 is Available");
+             setTimeout(person3,5000)
+        }
+        function person3() {
+            console.log("person 3 is Busy with person 2" );
+            setTimeout(person4,5000)
+            console.log("Person 4 Trying to Call Person 3");
+            console.log("Person 3 is Available");
+         }
+
+        function person4() {
+            console.log("Person 4 is Busy with Person 3");
+            setTimeout(person5,5000)
+            console.log("Person 5 is trying to Call Person 4");
+            console.log("Person 4 is Available");
+        }
+        function person5() {
+            console.log("Person 5 is Busy with Person 4");
+            setTimeout(person6,5000)
+            console.log("Person 6 is trying to Call Person 5");
+            console.log("Person 5 is Available");
+        }
+        function person6() {
+            console.log("Person 6 is Busy with Person 5");
+            setTimeout(person7,5000)
+            console.log("Person 7 is trying to Call Person 6");
+            console.log("Person 6 is Available");
+        }
+        function person7() {
+            console.log("Person 7 is Busy with Person 6");
+            setTimeout(person8,5000)
+            console.log("Person 8 is trying to Call Person 7");
+            console.log("Person 7 is Available");   
+        }
+        function person8() {
+            console.log("Person 8 is Busy with Person 7");
+            setTimeout(person9,5000)
+            console.log("Person 9 is trying to Call Person 8");
+            console.log("Person 8 is Available");
+        }
+        function person9() {
+            console.log("Person 9 is Busy with Person 8");
+            setTimeout(person10,5000)
+            console.log("Person 10 is trying to Call Person 9");
+            console.log("Person 9 is Available");  
+        }
+        function person10() {
+            console.log("Person 10 is Busy with Person 9");    
+        }
+
+
+        person1("Person 2",person2);
+    </script>
+</body>
+</html>

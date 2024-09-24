@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--!  We cannot perform the Function Overloading in JavaScript -->
+    <!--* Because JavaScript has Default Datatype called as "Undefined  -->
+
+    <script>
+        function overloading(a) {
+            console.log("Function 1");
+        }
+
+        function overloading(a,b) {
+            //b is considered as Undefined
+            console.log("Function 2");
+        }
+
+        overloading(10);
+    </script>
+</body>
+</html>

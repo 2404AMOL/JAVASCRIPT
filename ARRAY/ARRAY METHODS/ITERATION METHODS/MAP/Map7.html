@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers = [10, 20, 30, 40];
+
+    const result = numbers.map((number, index) => {
+    return { value: number * 2, index };
+    });
+
+    console.log(result); 
+    // Output: [{ value: 20, index: 0 }, { value: 40, index: 1 }, { value: 60, index: 2 }, { value: 80, index: 3 }]
+
+
+    document.write(result);
+    //After printing the result in document we get object. but we did not actual result.
+
+
+    //So for that we need convert the that result 
+
+    let convert=JSON.stringify(result);
+    document.write(convert);
+
+    </script>
+</body>
+</html>

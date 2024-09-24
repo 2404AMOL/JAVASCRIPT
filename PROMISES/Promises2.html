@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promises = new Promise((resolve,reject) =>{
+            setTimeout(() =>{
+                let prom1 = {
+                    name : "Amol",
+                    age : 24,
+                    status: ''
+                }
+                resolve(prom1.status=true);
+                reject("Rejected")
+            },4000)
+        })
+
+        promises.then((user) =>{
+            return new Promises((resolve1) =>{
+                resolve1("Pune")
+            }).then((Location) =>{
+                console.log(`user ${Location}`);
+            })
+        }).catch((error) =>{
+            console.log("You Are Not Allowed");
+        })
+    </script>
+</body>
+</html>
