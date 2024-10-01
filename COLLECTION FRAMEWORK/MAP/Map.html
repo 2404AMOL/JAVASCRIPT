@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! Map Remove the duplicate elements-->
+
+    <script>
+        let abc  = new Map();
+
+        abc.set("1", "One");
+        abc.set("2","Two");
+        abc.set("3","Three");
+        abc.set("1","One");
+
+        console.log(abc);
+
+        for (const key in abc) {
+            console.log(key)
+        }
+
+        for (const element of abc) {
+            console.log(element)
+        }
+    </script>
+</body>
+</html>

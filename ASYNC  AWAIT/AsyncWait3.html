@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let prop = new Promise(function(resolve,reject){
+            let err = null;
+
+            if(err){
+                resolve("Sucess")
+            }
+            else
+            {
+                reject("Error")
+            }
+        })
+
+        async function val() {
+            try{
+                let result = await prop
+                console.log(result);
+            }
+            catch{
+                console.log(err)
+            }
+        }
+
+        val();
+    </script>
+</body>
+</html>

@@ -27,26 +27,32 @@
         console.log(var3);
     </script>
 
-    <!--* We have to Take care that Original object Key Matching with Destructuring Keys  -->
+    <!--! We have to Take care that Original object Key Matching with Destructuring Keys  -->
      <script>
-        const {key1,key2,key3} = obj;
-        console.log(key1);
-        console.log(key2);
+        let obj1 ={
+            Key1:"Value1",
+            Key2:"Value2",
+            Key3:"Value3"
+        }
+        const {Key1,Key2,Key3} = obj1;
+        console.log(Key1);
+        console.log(Key2);
+        
     </script>
 
     <script>
-        let obj1={
+        let obj2={
             name:"Amol",
             age:24,
             Proff:"Engineering"
         }
-        console.log(typeof obj1);
-        console.log(obj1.name);
-        console.log(obj1.age);
+        console.log(typeof obj2);
+        console.log(obj2.name);
+        console.log(obj2.age);
 
 
         //Object Destructuring
-        const {name:a,age:b,Proff:c} = obj1;
+        const {name:a,age:b,Proff:c} = obj2;
 
         console.log(a);
         console.log(b);

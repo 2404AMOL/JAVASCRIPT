@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        let fName=["Ajay","Vijay","Sanjay","Dhanajay","Digvijay","Jay"]
+      let student = ["Arun", "Arul", "Sujithra", "Jenifer", "Wilson"];
 
-        console.log(fName);
+      student.map((stud, index) => {
+        alert("Hello... " + stud + "\n");
 
-        let nameIndex=fName.map((data,index1)=>{
-            if (index1%2==0) {
-                return {value :data +" Chavan",index1}
-            }
-        })
+        let index1 = index + 1;
 
-        console.log(nameIndex);
-
+        alert("Your Position in Top 5" + " Rank is " + index1 + "\n");
+      });
     </script>
-</body>
+  </body>
 </html>

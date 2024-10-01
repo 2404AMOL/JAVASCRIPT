@@ -21,8 +21,12 @@
             console.log(key);
         }
 
-        for (const element of Object.values(obj)) {
-            console.log(element)
+        for (const element in obj) {
+            console.log(element, "-" ,obj[element])
+        }
+
+        for (const element1 of Object.values(obj)) {
+            console.log(element1)
         }
     </script>
 
